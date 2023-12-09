@@ -1,0 +1,5 @@
+Alexis 23221397 69.697 30 Female 
+Alfred 23221037 61.6162 27 Female 
+Ava 23221197 67.6768 35 Male 
+Carlos 23221353 80.8081 38 Female 
+Alexander 23221137 78.7879 23 Female 
