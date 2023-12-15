@@ -84,72 +84,10 @@ void debug(info arr[N])
 
 
 void input_data(info arr[N]){
-	//string write;
-	 // because in file we have a space
-	//getline(cin, arr[0].gender);
-	//fstream f("test.txt", ios::out); // create the file for writing
-	//for(int i = 0; i < N; ++i) {
+	for(int i = 0; i < N; ++i) {
 		cin.ignore();
-		getline(cin, arr[0].name_of_student);
-		//f << arr[i].name_of_student << endl;
-	//}
-	
-	//cout << "name " << "faculty number " << "average balls " << "age " << "gender " << endl;
-	//getline(cin, arr[0].name_of_student);
-	//if(write == " ")
-		//return;
-	//for(int i = 0; i < N; ++i) {
-	//	cout << "name of student" << endl;
-	//	cin >> arr[i].name_of_student;
-
-	//	f << arr[i].name_of_student << endl;
-
-	//	cout << "faculty" << endl;
-	//	cin >> arr[i].faculty_num;
-	//	f << arr[i].faculty_num << endl;
-
-
-	//	cout << "av_balls" << endl;
-	//	cin >> arr[i].av_balls;
-	//	f << arr[i].av_balls << endl;
-
-
-	//	cout << "age" << endl;
-	//	cin >> arr[i].age;
-	//	f << arr[i].age << endl;
-
-
-
-	//	cout << "gender" << endl << endl;
-	//	cout << "1. Male" << endl;
-	//	cout << "2. Female" << endl;
-
-	//	int choose = 0;
-	//	cin >> choose;
-
-	//	if(choose == 1 || choose == 2) {
-	//		if (choose == 1) {
-	//			arr[i].gender = "Male";
-	//			f << arr[i].gender << endl;
-	//		}
-	//		else {
-	//			arr[i].gender = "Female";
-	//			f << arr[i].gender << endl;
-	//		}
-	//	}
-	//	else {
-	//		arr[i].gender = "Mutant(Error)";
-	//		f << arr[i].gender << endl;
-	//		exit(1);//protect for infinity loop
-	//	}
-	//	
-	//	f << endl;
-
-
-	//}
-
-
-	//f.close(); // close file
+		getline(cin, arr[i].name_of_student);
+	}
 }
 
 void input_random_data(){
@@ -160,7 +98,7 @@ void output_data(info arr[N]){
 	string a;
 
 	fstream f("test.txt");
-	// put from file our arrays
+
 	for(int i = 0; i < N; ++i) {
 		f >> arr[i].name_of_student;
 		f >> arr[i].faculty_num;
@@ -177,10 +115,6 @@ void output_data(info arr[N]){
 int main(){
 	//srand(time(NULL));
 	info arr[N]; int choose = 0;
-
-
-
-
 
 	do{
 
